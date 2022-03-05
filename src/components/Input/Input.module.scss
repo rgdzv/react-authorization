@@ -1,0 +1,45 @@
+.input {
+  width: 100%;
+  height: 35px;
+  padding: 5px 12px;
+  border-style: none;
+  border-bottom: 1px solid #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  outline: none;
+  margin-bottom: 13px;
+  transition: color 0.2s linear;
+  background: transparent;
+  box-shadow: none;
+
+  &::placeholder {
+    color: rgb(255, 255, 255, 0.5);
+    transition: color 0.2s linear;
+  }
+
+  &:hover {
+    &::placeholder {
+      color: #ffffff;
+    }
+  }
+}
+
+.password {
+  position: relative;
+
+  img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    z-index: 2;
+    cursor: pointer;
+  }
+}
+
+.error {
+  color:#ff0000;
+  font-size: 13px;
+}

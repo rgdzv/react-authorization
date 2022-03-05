@@ -1,0 +1,46 @@
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  height: 100px;
+  padding: 10px 15px;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+
+  .links {
+    a {
+      padding: 0px 10px; 
+      border: 1px solid #ffffff;
+      transition: all .2s linear;
+      font-weight: 300;
+
+      &:hover {
+        background: #ffffff;
+        color: #000000;
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .user {
+    justify-self: start;
+    font-size: 25px;
+  }
+
+  .button {
+    justify-self: end;
+    color: #ffffff;
+    padding: 10px 10px; 
+    border: 1px solid #ffffff;
+    transition: all .2s linear;
+    font-weight: 300;
+    
+    &:hover {
+      background: #ffffff;
+      color: #000000;
+    }
+  }
+}
